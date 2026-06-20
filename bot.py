@@ -46,7 +46,7 @@ async def cigs(ctx):
     data = load_data()
     user = str(ctx.author.id)
 
-    await ctx.send(f"🚬 Masz {data.get(user, 0)} papierosów")
+    await ctx.send(f"🚬 You smoked {data.get(user, 0)} cigarettes")
 
 
 bot.run(TOKEN)
