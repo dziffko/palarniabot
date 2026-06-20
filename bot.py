@@ -49,4 +49,5 @@ async def cigs(ctx):
     await ctx.send(f"🚬 Masz {data.get(user, 0)} papierosów")
 
 
-bot.run(TOKEN)
+import os
+TOKEN = os.getenv("TOKEN")
